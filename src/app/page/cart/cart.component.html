@@ -1,0 +1,69 @@
+<div class="space">
+  <div class="container" *ngIf="totalPrice != 0 ; else cartNull">
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Product detail</th>
+          <th></th>
+          <th>Product price</th>
+          <th>Quantity</th>
+          <th>Total price</th>
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let cart of cartList">
+        <tr>
+          <td class="image">
+            <img class="card-img" [src]="cart.img">
+          </td>
+          <td class="description">
+            {{cart.name}}
+          </td>
+          <td class="price fw-bold">
+            <div>
+              <strong class="fsz-20">{{cart.price}} </strong>
+            </div>
+          </td>
+
+          <td class="quantity fw-bold">
+            <div>
+              <strong class="fsz-20">{{cart.quantity}} </strong>
+            </div>
+          </td>
+
+          <td class="total fw-bold">
+            <div>
+              <strong class="fsz-20 clr-txt">{{cart.quantity * cart.price}}</strong>
+            </div>
+          </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+    <div class="continue-shopping">
+      <div class="left">
+        <h6 style="padding-left: 10px">CONTACT US</h6>
+        <div class="coupan-form">
+          <input class="form-control" placeholder="Enter your email" (input)="getEmail($event)">
+          <button class="btn" type="submit" (click)="submitEmail()"> APPLY </button>
+        </div>
+      </div>
+      <div class="right">
+        <strong class="fsz-20 fontbold-2">Subtotal : <span class="clr-txt">{{totalPrice}}</span>
+        </strong>
+      </div>
+    </div>
+
+    <div class="shp-btn col-sm-12 text-center">
+      <button class="theme-btn-2 btn" (click)="redirectToHome()"> <b> CONTINUE SHOPPING </b> </button>
+      <button class="theme-btn-3 btn" (click)="checkOut()"> <b> CHECKOUT NOW </b> </button>
+    </div>
+  </div>
+</div>
+
+<ng-template #cartNull>
+  <h1>Your cart is empty, Please go shopping and comeback latter !</h1>
+</ng-template>

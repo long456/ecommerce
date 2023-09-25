@@ -1,0 +1,12 @@
+<div class="row mt-3">
+  <h4>Vegetables</h4>
+
+  <div class="col-lg-3" *ngFor="let product of productList">
+    <div class="card-item">
+      <img class="card-img" [src]="product.img">
+      <span class="card-name">{{product.name}}</span>
+      <span class="card-price">{{product.price}}</span>
+      <button class="button button-add-to-card" (click)="addToCart(product)">add to card</button>
+    </div>
+  </div>
+</div>

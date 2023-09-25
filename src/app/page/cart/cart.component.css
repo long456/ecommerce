@@ -1,0 +1,112 @@
+.space{
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.product-table{
+  height: auto;
+  overflow: auto;
+  width: 100%;
+}
+
+.product-table th {
+  font-weight: normal;
+  padding: 13px 20px;
+  text-transform: capitalize;
+  background-color: #f5f4f0;
+  color: #7d7d7d;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+}
+
+.product-table td {
+  border-top: 1px solid #eeeeee;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.image img {
+  max-width: 170px;
+  max-height: 170px;
+}
+
+.continue-shopping{
+  border-bottom: 1px solid #eeeeee;
+  border-top: 1px solid #eeeeee;
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 30px 0 40px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.continue-shopping .left {
+  float: left;
+  width: 370px;
+}
+
+.right{
+  float: right;
+  margin-top: 25px;
+  padding-right: 70px;
+}
+
+.clr-txt{
+  color: #7fba00;
+}
+
+.shp-btn > .btn {
+  margin: 15px;
+}
+
+.theme-btn-2, .theme-btn-sm-2 {
+  background-color: #90d3a6;
+  color: #fff;
+}
+
+.theme-btn, .theme-btn-2, .theme-btn-3 {
+  border: medium none;
+  border-radius: 2em;
+  box-shadow: none;
+  font-size: 18px;
+  height: 52px;
+  padding: 0 25px;
+  color: #fff;
+  min-width: 200px;
+  line-height: 50px;
+}
+
+.theme-btn-3, .theme-btn-sm-3 {
+  background-color: #75d1d7;
+  color: #fff;
+}
+
+.coupan-form {
+  overflow: hidden;
+  position: relative;
+}
+
+.form-control, .input-group-addon, .bootstrap-select .btn {
+  background-color: #fbfbfb;
+  border-color: #e7e7e6;
+  border-radius: 25px;
+  box-shadow: none;
+  font-size: 13px;
+  height: 45px;
+  line-height: 40px;
+  padding: 10px 20px;
+}
+
+.coupan-form .btn {
+  background-color: #fbfaf6;
+  border-left: 1px solid #e7e7e6;
+  border-radius: 0 5em 5em 0;
+  font-size: 13px;
+  font-weight: 900;
+  height: 43px;
+  padding: 10px 25px;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
